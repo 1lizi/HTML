@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录注册</title>
+</head>
+<body>
+<h1>注册</h1>
+
+<!--表单form
+action：表单提交的位置，可以是网站，也可以是一个请求处理地址
+method：post，get 提交方式
+    get方式提交：外面可以在url中看到外面提交的信息，不安全，高效
+    post方式提交，比较安全，可以传输大文件
+-->
+<form action="1.我的第一个网页.html" method="get">
+  <!--文本输入框 ：input type ="text"-->
+  <p>名称：<input type="text" name="username" placeholder="请输入用户名"></p>
+  <!--密码框-->
+  <p>密码：<input type="password" name="pwd"></p>
+
+<!--单选框标签
+input type="radio"
+value:单选框的值
+name :表示组
+-->
+
+  <p>性别：
+    <input type="radio" value="boy" name="sex"/>男
+    <input type="radio" value="girl" name="sex"/>女
+
+  </p>
+
+<!--多选框
+input type="checkbox"
+-->
+  <p>爱好：
+  <input type="checkbox" value="paint" name="hobby"> 画画
+  <input type="checkbox" value="swim" name="hobby"> 游泳
+  <input type="checkbox" value="walk" name="hobby">压马路
+  <input type="checkbox" value="sleep" name="hobby"> 睡觉
+  <input type="checkbox" value="game" name="hobby"> 游戏
+  </p>
+
+<!--按钮-->
+  <p>按钮：
+  <input type="button" name="btn1" value="点击变大">
+  <input type="image" src="../resources/image/girl.jpg">
+  </p>
+
+<!--下拉框，列表框-->
+<p> 国家：
+  <select name="列表名称">
+    <option value="china">中国</option>
+    <option value="us" selected>美国</option>
+    <option value="Japan">日本</option>
+  </select>
+</p>
+
+<!--文本域-->
+<p> 反馈信息：
+  <textarea name="textarea" cols="20"rows="5">反馈内容 </textarea>
+
+
+<!--文件域-->
+  <p>
+    <input type="file" name="files">
+    <input type="button" value="上传" name="upload">
+  </p>
+
+
+  <!--邮件验证-->
+  <p>邮箱：
+    <input type="email" name="email">
+  </p>
+  <!--URL-->
+  <p>URL：
+    <input type="url" name="url">
+  </p>
+  <!--数字-->
+  <p>商品数量：
+    <input type="number" name="num" max="100" min="0" step="1">
+  </p>
+
+  <!--滑块-->
+  <p>音量：
+    <input type="range" name="voice" min="0" max="100" step="2">
+  </p>
+
+  <!--搜索框-->
+  <p>搜索：
+    <input type="search" name="search" id="mark">
+  </p>
+
+<!--增强鼠标可用性  label标签的一个作用，指向鼠标的位置-->
+  <p>
+  <label for="mark">点击这里</label>
+  <input type="text">
+  </p>
+
+  <p>
+    <input type="submit">
+    <input type="reset">
+  </p>
+</form>
+</body>
+</html>
